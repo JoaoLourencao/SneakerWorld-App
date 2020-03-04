@@ -1,8 +1,12 @@
-import React from 'react';
-import { View } from 'react-native';
+import React, {useState, useEffect} from 'react';
+import Routes from './routes';
+import {StatusBar} from 'react-native';
 
-export default function App () {
-    return(
-        <View/>
-    );
+export default function App(){
+  return(
+    <>
+      <StatusBar barStyle="dark-content" backgroundColor="#fff"/>
+      <Routes/>
+    </>
+  );
 }
